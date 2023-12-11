@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-        
+    
+    @IBOutlet weak var NASAImage: UIImageView!
+    
     struct NASAData: Codable {
         let date, explanation, mediaType, serviceVersion: String
         let title: String
@@ -24,62 +26,45 @@ class ViewController: UIViewController {
     
     func fetchDataFromAPI() {
         // API URL
-        let apiUrl = URL(string: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2023-12-08")!
-
-        // Create a URLSession
-        let session = URLSession.shared
-
-        // Create a data task to make the request
-        let task = session.dataTask(with: apiUrl) { data, response, error in
-            // Check for errors
-            if let error = error {
-                print("Error: \(error)")
-                return
-            }
-
-            // Check if data is available
-            guard let jsonData = data else {
-                print("No data received.")
-                return
-            }
-
-            do {
-                // Decode JSON using Codable
-                let decoder = JSONDecoder()
-                let NASAModel = try decoder.decode(NASAData.self, from: jsonData)
-
-                // Once you have the image URL, load and set the image
-                if let imageUrl = URL(string: NASAModel.url) {
-                    self.downloadImage(from: imageUrl)
-                }
-
-            } catch {
-                print("Error decoding JSON: \(error)")
-            }
+        guard let apiUrl = URL(string: "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2023-12-10") else {
+            print("invalid url")
+            return
         }
-
-        // Start the data task
-        task.resume()
+        
+        guard let jsonData = try? Data(contentsOf: apiUrl) else {
+            print("no data received")
+            return
+        }
+    
+        do {
+            let decoder = JSONDecoder()
+            let NASAModel = try decoder.decode(NASAData.self, from: jsonData)
+            
+            //once have image url, load and set the image
+            
+            if let imageUrl = URL(string: NASAModel.url) {
+                self.downloadImage(from: imageUrl)
+            }
+            
+        } catch {
+            print("Error decoding JSON: \(error)")
+        }
     }
     
-    @IBOutlet weak var NASAImage: UIImageView!
     
     func downloadImage(from url: URL) {
-            let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                guard let imageData = data else {
-                    print("No image data received.")
-                    return
-                }
-                // Create UIImage from imageData
-                if let image = UIImage(data: imageData) {
-                    // Update the UI on the main thread
-                    DispatchQueue.main.async {
-                        self.NASAImage.image = image
-                    }
-                }
-            }
-            task.resume()
+        
+        guard let imageData = try? Data(contentsOf: url) else {
+            print("no data received")
+            return
         }
+        
+        if let image = UIImage(data: imageData) {
+            DispatchQueue.main.async {
+                self.NASAImage.image = image
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
