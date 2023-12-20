@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6F96B441-462C-4BE7-81AA-218B1912919D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A63A69EE-DEED-4346-B88A-CA9A5D9DDF60"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nasaproject/ViewController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "downloadImage(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A63A69EE-DEED-4346-B88A-CA9A5D9DDF60 - bc46ef2a0a79df16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in nasaproject.ViewController.downloadImage(from: Foundation.URL) -&gt; ()"
+                  moduleName = "nasaproject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zumrannain/Desktop/Workstudy/nasaproject/nasaproject/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "A63A69EE-DEED-4346-B88A-CA9A5D9DDF60 - bc46ef2a0a79df16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in nasaproject.ViewController.downloadImage(from: Foundation.URL) -&gt; ()"
+                  moduleName = "nasaproject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zumrannain/Desktop/Workstudy/nasaproject/nasaproject/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22F05EFC-C676-4C12-BD00-540665FB3E66"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "nasaproject/ViewController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "downloadImage(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "22F05EFC-C676-4C12-BD00-540665FB3E66 - bc46ef2a0a79df35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in nasaproject.ViewController.downloadImage(from: Foundation.URL) -&gt; ()"
+                  moduleName = "nasaproject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zumrannain/Desktop/Workstudy/nasaproject/nasaproject/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "142">
+               </Location>
+               <Location
+                  uuid = "22F05EFC-C676-4C12-BD00-540665FB3E66 - bc46ef2a0a79ded4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in nasaproject.ViewController.downloadImage(from: Foundation.URL) -&gt; ()"
+                  moduleName = "nasaproject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zumrannain/Desktop/Workstudy/nasaproject/nasaproject/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "98">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
