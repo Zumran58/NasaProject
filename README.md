@@ -1,2 +1,1 @@
-
-UI APP that 
+NASA Apod API that fetches the current NASA picture of the day from the following URL: https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY. The last parameter in the JSON contains the respective image URL. 
